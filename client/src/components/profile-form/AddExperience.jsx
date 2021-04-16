@@ -55,7 +55,7 @@ const AddExperience = ({ addExperience, history }) => {
                 <div className="form-group">
                     <input
                         type="text"
-                        placeholder="* Job Title"
+                        placeholder="* Position"
                         name="title"
                         required
                         value={title}

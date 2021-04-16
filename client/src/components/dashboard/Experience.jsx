@@ -5,7 +5,7 @@ import Moment from 'react-moment'
 import { Fragment } from 'react'
 import { deleteExperience, getCurrentProfile } from '../../actions/profile'
 
-const Experience = ({ experience, deleteExperience, getCurrentProfile }) => {
+const Experience = ({ experience, deleteExperience }) => {
     const experiences = experience.map(exp => (
         <tr key={exp._id}>
             <td aria-label="Company">{exp.company}</td>
@@ -36,7 +36,7 @@ const Experience = ({ experience, deleteExperience, getCurrentProfile }) => {
                 <thead>
                     <tr>
                         <th>Company</th>
-                        <th>Title</th>
+                        <th>Position</th>
                         <th>Years</th>
                         <th />
                     </tr>

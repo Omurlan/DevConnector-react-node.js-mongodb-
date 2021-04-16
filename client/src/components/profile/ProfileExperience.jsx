@@ -20,13 +20,13 @@ const ProfileExperience = ({
             <p>
                 <strong>Years: </strong>
                 <Moment format='YYYY/MM/DD'>{from}</Moment> -
-                {!to ? ' Now' : <Moment format='YYYY/MM/DD'></Moment>}
+                {!to ? 'Now ' : <span> <Moment format='YYYY/MM/DD'>{to}</Moment></span>}
             </p>
             <p>
                 <strong>Position: </strong> {title}
             </p>
             <p>
-                <strong>Description </strong> {description}
+                <strong>Description: </strong> {description}
             </p>
         </div>
     )

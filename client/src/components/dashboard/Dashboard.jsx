@@ -33,8 +33,18 @@ const Dashboard = ({
             {profile !== null ? (
                 <Fragment>
                     <DashboardActions />
-                    <Experience experience={profile.experience} />
-                    <Education education={profile.education} />
+                    {!profile.experience ? (
+                        <h2 className="my-2">No experience credentials ...</h2>
+                    ) : (
+                        <Experience experience={profile.experience} />
+                    )}
+
+                    {!profile.education ? (
+                        <h2 className="my-2">No education credentials ...</h2>
+                    ) : (
+                        <Education education={profile.education} />
+                    )}
+
 
                     <div className="my-2">
                         <button
