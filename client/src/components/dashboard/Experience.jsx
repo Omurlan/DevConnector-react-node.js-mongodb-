@@ -9,7 +9,7 @@ const Experience = ({ experience, deleteExperience }) => {
     const experiences = experience.map(exp => (
         <tr key={exp._id}>
             <td aria-label="Company">{exp.company}</td>
-            <td aria-label="Title">{exp.title}</td>
+            <td aria-label="Position">{exp.title}</td>
             <td aria-label="Years">
                 <Moment format='YYYY/MM/DD'>{exp.from}</Moment> - {
                     exp.to === null ? (

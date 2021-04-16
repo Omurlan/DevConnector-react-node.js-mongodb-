@@ -10,8 +10,8 @@ const Education = ({ education, deleteEducation }) => {
     const educations = education.map(edu => (
         <tr key={edu._id}>
             <td aria-label="School">{edu.school}</td>
-            <td aria-label="Degree" className="">{edu.degree}</td>
-            <td aria-label="Years" className="">
+            <td aria-label="Degree">{edu.degree}</td>
+            <td aria-label="Years">
                 <Moment format='YYYY/MM/DD'>{edu.from}</Moment> - {
                     edu.to === null ? (
                         'Now'
@@ -36,9 +36,9 @@ const Education = ({ education, deleteEducation }) => {
             <table className="table">
                 <thead>
                     <tr>
-                        <th className="test">School</th>
-                        <th className="test">Degree</th>
-                        <th className="test">Years</th>
+                        <th>School</th>
+                        <th>Degree</th>
+                        <th>Years</th>
                         <th />
                     </tr>
                 </thead>
