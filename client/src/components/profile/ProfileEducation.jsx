@@ -15,8 +15,11 @@ const ProfileEducation = ({
 }) => {
     return (
         <div>
-            <h3 className="text-dark">{school}</h3>
             <p>
+                <strong>School or Bootcamp: </strong> {school}
+            </p>
+            <p>
+                <strong>Years: </strong>
                 <Moment format='YYYY/MM/DD'>{from}</Moment> -
                 {!to ? 'Now' : <Moment format='YYYY/MM/DD'></Moment>}
             </p>
@@ -27,7 +30,7 @@ const ProfileEducation = ({
                 <strong>Field Of Study: </strong> {fieldofstudy}
             </p>
             <p>
-                <strong>Description </strong> {description}
+                <strong>Description: </strong> {description}
             </p>
         </div>
     )

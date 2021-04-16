@@ -4,13 +4,14 @@ import { connect } from 'react-redux'
 import Moment from 'react-moment'
 import { Fragment } from 'react'
 import { deleteEducation } from '../../actions/profile'
+import './Education.css'
 
 const Education = ({ education, deleteEducation }) => {
     const educations = education.map(edu => (
         <tr key={edu._id}>
-            <td>{edu.school}</td>
-            <td className="hide-sm">{edu.degree}</td>
-            <td className="hide-sm">
+            <td aria-label="School">{edu.school}</td>
+            <td aria-label="Degree" className="">{edu.degree}</td>
+            <td aria-label="Years" className="">
                 <Moment format='YYYY/MM/DD'>{edu.from}</Moment> - {
                     edu.to === null ? (
                         'Now'
@@ -35,9 +36,9 @@ const Education = ({ education, deleteEducation }) => {
             <table className="table">
                 <thead>
                     <tr>
-                        <th>School</th>
-                        <th className="hide-sm">Degree</th>
-                        <th className="hide-sm">Years</th>
+                        <th className="test">School</th>
+                        <th className="test">Degree</th>
+                        <th className="test">Years</th>
                         <th />
                     </tr>
                 </thead>

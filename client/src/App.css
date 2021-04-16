@@ -1,3 +1,7 @@
+/* Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap');
+
 /* Global Styles */
 :root {
   --primary-color: #17a2b8;
@@ -14,7 +18,8 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -561,15 +566,20 @@ button {
     flex-direction: column;
   }
 
+  .btn {
+    padding: 0.8rem;
+  }
+
   .dash-buttons a {
     display: block;
     width: 100%;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .post {
     grid-template-columns: 1fr;
   }
+
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;

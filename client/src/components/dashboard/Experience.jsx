@@ -8,9 +8,9 @@ import { deleteExperience, getCurrentProfile } from '../../actions/profile'
 const Experience = ({ experience, deleteExperience, getCurrentProfile }) => {
     const experiences = experience.map(exp => (
         <tr key={exp._id}>
-            <td>{exp.company}</td>
-            <td className="hide-sm">{exp.title}</td>
-            <td className="hide-sm">
+            <td aria-label="Company">{exp.company}</td>
+            <td aria-label="Title">{exp.title}</td>
+            <td aria-label="Years">
                 <Moment format='YYYY/MM/DD'>{exp.from}</Moment> - {
                     exp.to === null ? (
                         'Now'
@@ -36,8 +36,8 @@ const Experience = ({ experience, deleteExperience, getCurrentProfile }) => {
                 <thead>
                     <tr>
                         <th>Company</th>
-                        <th className="hide-sm">Title</th>
-                        <th className="hide-sm">Years</th>
+                        <th>Title</th>
+                        <th>Years</th>
                         <th />
                     </tr>
                 </thead>

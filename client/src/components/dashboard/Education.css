@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border: 0px;
+  border-collapse: collapse;
+}
+
+table td {
+  border-bottom: 1px solid #e8e9eb;
+}
+
+@media screen and (max-width: 800px) {
+  table thead {
+    display: none;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e8e9eb;
+  }
+  .table td {
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
