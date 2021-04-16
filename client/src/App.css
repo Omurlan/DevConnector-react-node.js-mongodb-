@@ -500,6 +500,7 @@ button {
 @media (max-width: 700px) {
   .container {
     margin-top: 8rem;
+    padding: 0 1.2rem;
   }
 
   .hide-sm {
@@ -586,5 +587,11 @@ button {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
   }
 }
